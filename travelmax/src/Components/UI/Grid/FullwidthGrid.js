@@ -124,7 +124,7 @@ const FullwidthGrid = (props) => {
     
 }
 
-FullwidthGrid.PropTypes = {
+FullwidthGrid.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 

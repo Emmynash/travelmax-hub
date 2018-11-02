@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logo from '../../../Assets/Images/Logo/TravelMax_Logo_orange.png';
-import loginModal from '../Modal/loginModal';
+import LoginModal from '../Modal/loginModal';
+import RegisterModal from '../Modal/Register/Register';
 import {
   Collapse,
   Navbar,
@@ -34,22 +35,23 @@ export default class Header extends React.Component {
   }
   
   LoginHandler = () => {
-   return <loginModal />;
+    console.log('Click');
+   return <LoginModal />;
   };
   
   render() {
     
-    const Style = {
-    content: {
-      backgroundColor: 'grey', 
-      position: 'fixed'
-    }
-  };
+  //   const Style = {
+  //   content: {
+  //     backgroundColor: 'grey', 
+  //     position: 'fixed'
+  //   }
+  // };
   
   
     return (
       <div style={{height: '100px', marginTop: '-35px'}}>
-        <Navbar style={{marginBottom: '-50px'}} color="dark" fixed dark expand="md">
+        <Navbar style={{marginBottom: '-50px'}} color="dark"  dark expand="md">
           <NavbarBrand href="/"><img src={logo} height='100' width='100' alt="Travelmax logo" name="Travelmax logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -66,10 +68,10 @@ export default class Header extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem onClick={this.LoginHandler}>
-                    Login
+                    <LoginModal />
                   </DropdownItem>
                   <DropdownItem>
-                    Register
+                    <RegisterModal />
                   </DropdownItem>
                   <DropdownItem divider />
                 </DropdownMenu>

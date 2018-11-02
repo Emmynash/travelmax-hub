@@ -19,13 +19,13 @@ return (
      <h5 style={{marginLeft:'25px'}} className="title">Quick</h5>
       <ul className={classes.Links}>
         <li className="list-unstyled">
-          <a href="#!">Faq</a>
+          <a href="/">Faq</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">about us</a>
+          <a href="/">about us</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Flights</a>
+          <a href="/">Flights</a>
         </li>
       </ul>
       </Col>
@@ -33,16 +33,16 @@ return (
      <h5 style={{marginLeft:'30px'}} className="title">Links</h5>
       <ul   className={classes.Links}>
         <li className="list-unstyled">
-          <a href="#!"></a>
+          <a href="/"></a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Flights</a>
+          <a href="/">Flights</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Hotels</a>
+          <a href="/">Hotels</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Hotels</a>
+          <a href="/">Hotels</a>
         </li>
       </ul>
       </Col>

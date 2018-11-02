@@ -1,55 +1,38 @@
 import React from 'react';
-import Image from 'material-ui-image';
+// import Image from 'material-ui-image';
 import CardMedia from '@material-ui/core/CardMedia';
 import SearchBar from '../Search/Search';
 
 
 
-const style = {
-media: {
+// const style = {
+// media: {
  
-  paddingTop: '56.25%', // 16:9,
-  marginTop:'30',
+//   paddingTop: '56.25%', // 16:9,
+//   marginTop:'30',
   
-    },
-    
-    search: {
-       
-        zIndex: '200',
-        position: 'relative',
-        marginTop: '-300px'
-    }
- 
-  
-};
-
-
-// const styles = {
-//     paperContainer: {
-//         height: '500px',
-//         width: '100%',
-//         backgroundImage: `url(${Image})`,
-//         position: 'relative',
-//         zIndex: '100'
 //     },
     
 //     search: {
-//         marginTop: '40%',
+       
 //         zIndex: '200',
-//         position: 'relative'
+//         position: 'relative',
+//         marginTop: '-300px'
 //     }
+ 
+  
 // };
 
 
 
 const bkImage = (props) =>{
     return(
-         <div>
+         <div style={{zIndex:200}}>
           
          <CardMedia
              
               title=""
-              style={{marginTop:'30'}}
+              style={{marginTop:'30', zIndex:200}}
               
         >
         

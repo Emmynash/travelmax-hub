@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,  Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter,  Form, FormGroup, Label, Input } from 'reactstrap';
 
-class ModalExample extends React.Component {
+class LoginModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,20 +21,20 @@ class ModalExample extends React.Component {
   render() {
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <Button color="link" style={{color: '#000', textDecoration: 'none'}} onClick={this.toggle}>Login</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Login</ModalHeader>
           <ModalBody>
            <Form>
                 <FormGroup>
                   <Label for="exampleEmail">Email</Label>
-                  <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                  <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
                 </FormGroup>
                 <FormGroup>
                   <Label for="examplePassword">Password</Label>
-                  <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                  <Input type="password" name="password" id="examplePassword" placeholder="Password" />
                 </FormGroup>
-                <Button color="primary" onClick>Sign in</Button>
+                <Button color="primary">Sign in</Button>
             </Form>
           </ModalBody>
           <ModalFooter>
@@ -46,4 +47,4 @@ class ModalExample extends React.Component {
   }
 }
 
-export default ModalExample;
+export default LoginModal;

@@ -7,6 +7,7 @@ import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import image from '../../../Assets/Images/home4.jpg';
+import content from './search.css';
 
 
 const styles = theme => ({
@@ -15,7 +16,7 @@ const styles = theme => ({
     color: 'grey',
     // backgroundColor: 'grey',
     backgroundImage: `url(${image})`,
-    // marginTop: "-150px"
+   
   },
   grow: {
     flexGrow: 4,
@@ -60,7 +61,7 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit,
     paddingRight: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit * 5,
+    paddingLeft: theme.spacing.unit * 3,
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
@@ -89,8 +90,8 @@ const Search = (props) =>{
     <div className={classes.root}>
      <div className={backImage.bk}  position="relative" style={{ backgroundSize: 'cover', overflow: 'hidden', backgroundRepeat: 'no-repeat', backgroundImage: `url(require("../../../Assets/Images/home4.jpg"))`, height: '550px', width: '100%', flexFlow: 'column', position: 'relative',  display: 'flex', alignItems : 'center', justifyContent: 'space-between', padding: '180px 20px', marginTop:'30'}}>
      <h3>Search and Book Cheap Flights</h3>
-      <AppBar position="relative" style={{backgroundColor: '#e56c52',  position: 'relative',  display: 'flex', alignItems : 'center', justifyContent: 'space-between', padding: '10px'}}>
-        <Toolbar>
+      <AppBar position="relative" style={{backgroundColor: '#e56c52',  position: 'relative',  display: 'flex', alignItems : 'center', justifyContent: 'space-between', padding: '10px', zIndex:500}}>
+        <Toolbar className={content.content}>
           <div className={classes.grow} />
           <div className={classes.search}>
             <InputBase
