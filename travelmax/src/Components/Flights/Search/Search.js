@@ -149,7 +149,7 @@ const Search = (props) =>{
           </div>
           
           
-          <Button variant="outlined" href="#" className={{margin: 'spacing.unit'}}>Search</Button>
+          <Button variant="outlined" href="#" >Search</Button>
         </Toolbar>
       </AppBar>
     </div>

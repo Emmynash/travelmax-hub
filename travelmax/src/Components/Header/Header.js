@@ -19,7 +19,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Button
   } from 'reactstrap';
 
 export default class Header extends React.Component {
@@ -72,12 +71,12 @@ export default class Header extends React.Component {
                   Account
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <Button color="link" style={{textDecoration: 'none', color: '#000'}} >
+                  <NavLink color="link" style={{textDecoration: 'none', color: '#000'}} >
                     <LoginModal />
-                  </Button>
-                  <Button color="link" style={{textDecoration: 'none', color: '#000'}} >
+                  </NavLink>
+                  <NavLink color="link" style={{textDecoration: 'none', color: '#000'}} >
                     <RegisterModal />
-                  </Button>
+                  </NavLink>
                   <DropdownItem divider />
                 </DropdownMenu>
               </UncontrolledDropdown>
