@@ -3,7 +3,6 @@ import Layout from './Components/Layout/Layout';
 import HotelContainer from './Containers/Hotels/HotelContainer';
 import FlightContainer from './Containers/Flights/FlightContainer';
 import { Route, Switch } from 'react-router-dom';
-
 import './App.css';
 
 class App extends Component {
